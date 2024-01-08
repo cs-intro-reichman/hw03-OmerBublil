@@ -13,7 +13,7 @@ public class UniqueChars {
         String ans = "";
         for (int i = 0 ; i < s.length() ; i++){
             char c = s.charAt (i);
-            if (s.indexOf(c) == i || s.charAt(i) == ' ' ){
+            if (ans.indexOf(c) == -1 || c == 32 ){
                 ans += c;
             }
         }
